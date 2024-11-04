@@ -1,5 +1,5 @@
 let songIndex = 0;
-let audioElement = new Audio('destinationtortuga.mp3'); // Caminho correto do primeiro áudio
+let audioElement = new Audio('destinationtortuga.mp3'); 
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');

@@ -1,5 +1,5 @@
 document.getElementById("registerButton").addEventListener("click", function(event) {
-    event.preventDefault(); // Previne o comportamento padrão do formulário, se for o caso
+    event.preventDefault(); 
     
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;

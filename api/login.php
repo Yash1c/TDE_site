@@ -15,13 +15,13 @@ $username = $data->username;
 $password = $data->password;
 
 try {
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username LIMIT 1"); // Corrigido de "name" para "username"
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username LIMIT 1");
     $stmt->bindParam(":username", $username);
     $stmt->execute();
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user && password_verify($password, $user['password_hash'])) {
-        $token = bin2hex(random_bytes(16)); // Gerar token seguro
+        $token = bin2hex(random_bytes(16)); 
 
         $stmt = $pdo->prepare("UPDATE users SET token = :token WHERE id = :id");
         $stmt->bindParam(":token", $token);
