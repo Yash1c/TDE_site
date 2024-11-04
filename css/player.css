@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap');
+
+@font-face {
+    font-family: 'TheRumIsGone';
+    src: url('TheRumIsGone-Wy1nG.ttf') format('truetype');
+}
+
+body {
+    background-color: #442416ad;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #7c662a;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: #d4af37;
+}
+
+.logo img {
+    width: 200px;
+    padding: 0 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+body {
+    background: url('../extra/barquinho.jpg');
+    background-size: cover;
+}
+
+.container {
+    min-height: 72vh;
+    background: rgba(46, 43, 43, 0.658);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #d4af37;
+    font-family: 'Trebuchet MS', sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+}
+
+h1 {
+    font-family: 'TheRumIsGone', sans-serif;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: #d4af37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    -webkit-appearance: none; /* Remove a aparência padrão do slider no Webkit */
+    height:3px; /* Altura da barra */
+    border-radius: 10px; /* Arredondamento da barra */
+    background: #855d2a; /* Cor da barra de fundo */
+}
+
+/* Estilo para a parte preenchida da barra */
+#myProgressBar::-webkit-slider-runnable-track {
+    background: #e4c973; /* Cor da parte preenchida */
+    border-radius: 10px; /* Arredondamento da parte preenchida */
+}
+
+#myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove a aparência padrão do botão do slider */
+    appearance: none;
+    width: 15px; /* Largura do botão do slider */
+    height: 15px; /* Altura do botão do slider */
+    background: #553914; /* Cor do botão do slider */
+    border-radius: 50%; /* Arredondamento do botão do slider */
+    cursor: pointer; /* Cursor ao passar sobre o botão */
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: #2e2b2b;
+    color: #d4af37;
+    margin: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 40px;
+    margin: 0px 25px;
+    padding: 0px 3px 0px 3px;
+    border-radius: 10px;
+}
+
+.timestamp {
+    margin: 0 23px;
+    color: #855d2a;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Piratefy</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" type="image/x-icon" href="extra/logor2preto.png" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="extra/logofulclean.png" alt="Piratefy Logo" class="logo">
+            <h1>Entrar no Piratefy</h1>
+            
+            <div class="social-buttons">
+                <button class="btn social googlepirate">Continue com o Google Pirate</button>
+                <button class="btn social parrotbook">Continue com o Parrotbook</button>
+                <button class="btn social rum">Continue com o Rum</button>
+                <button class="btn social phone">Continue com um número de telefone</button>
+            </div>
+
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="email">Email ou nome de pirata</label>
+                    <input type="text" id="email" name="email" placeholder="Email ou nome de pirata" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Senha" required>
+                        <button type="button" class="toggle-password">☸</button>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn login">Acessar tesouro 🏴‍☠</button>
+            </form>
+
+            <div class="links">
+                <a href="#">Esqueceu sua senha?</a>
+                <p>Não tem uma conta? <a href="cadastro.html">Assine o Piratefy!</a></p>
+            </div>
+
+            <footer>
+                <p>Esse site é protegido por reCAPITCHAO e a <a href="#">Política de Privacidade</a> e <a href="#">Termos de Pena</a> do Google Pirate são aplicados.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordField = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+        });
+    </script>
+</body>
+</html>
